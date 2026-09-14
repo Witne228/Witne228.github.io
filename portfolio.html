@@ -209,9 +209,17 @@
         }
 
         @media (max-width: 600px) {
-            h1 { font-size: 30px; }
+            .container { padding: 24px 14px 32px; }
+            h1 { font-size: clamp(26px, 9vw, 30px); line-height: 1.2; overflow-wrap: anywhere; }
+            .subtitle { font-size: 13px; line-height: 1.45; margin-bottom: 32px; }
+            .section-title { font-size: 18px; line-height: 1.35; margin: 28px 0 18px; }
             .video-grid { grid-template-columns: 1fr; }
             .design-grid { grid-template-columns: 1fr; }
+            .video-grid, .design-grid { gap: 16px; }
+            .video-card, .design-card { border-radius: 12px; }
+            .card-info { padding: 13px 15px; }
+            .card-info h3 { font-size: 15px; line-height: 1.35; }
+            .card-info p { line-height: 1.45; }
         }
     </style>
 </head>
