@@ -302,10 +302,12 @@
         }
 
         @media (max-width: 768px) {
-            .container { padding: 20px 15px; }
-            .header-wrapper { border-radius: 16px; }
-            .hero-banner { height: 180px; }
-            .header-wrapper:hover .hero-banner { height: 280px; }
+            .container { padding: 16px 12px 28px; }
+            .header-wrapper { border-radius: 16px; margin-bottom: 24px; }
+            .hero-banner,
+            .header-wrapper:hover .hero-banner { height: 150px; }
+            .header-wrapper:hover .hero-banner { filter: contrast(115%) brightness(95%) saturate(105%); }
+            .header-wrapper:hover .hero-banner::after { opacity: 1; }
             
             .profile-container {
                 position: relative;
@@ -313,11 +315,18 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                padding: 25px 20px;
+                padding: 20px 14px 22px;
             }
             
-            .profile-text h1 { font-size: 34px; }
-            .neon-card { padding: 25px; border-radius: 16px; }
+            .avatar-holder { width: 92px; height: 92px; }
+            .profile-text h1 { font-size: clamp(27px, 9vw, 34px); letter-spacing: 2px; }
+            .profile-text .tagline { font-size: 15px; line-height: 1.35; }
+            .profile-text .aim { font-size: 10px; line-height: 1.5; letter-spacing: 1px; }
+            .neon-card { padding: 20px 16px; border-radius: 14px; margin-bottom: 18px; }
+            h2 { font-size: 17px; line-height: 1.35; margin-bottom: 20px; }
+            li { padding-left: 20px; margin-bottom: 12px; line-height: 1.55; }
+            .grid-links { grid-template-columns: 1fr; gap: 10px; }
+            .neon-btn { padding: 14px 10px; }
         }
     </style>
 </head>
