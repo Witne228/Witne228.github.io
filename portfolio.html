@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Witne | Portfolio Cases</title>
     
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <style>
         :root {
@@ -220,6 +220,12 @@
             .card-info { padding: 13px 15px; }
             .card-info h3 { font-size: 15px; line-height: 1.35; }
             .card-info p { line-height: 1.45; }
+            .video-card:hover, .design-card:hover {
+                transform: none;
+                border-color: var(--border-neon);
+                box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            }
+            .design-card:hover .img-container img { transform: none; }
         }
     </style>
 </head>
@@ -282,12 +288,13 @@
     </div>
 </div>
 
-<script src="https://unpkg.com"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init({
         duration: 900,
         once: true,
-        offset: 50
+        offset: 50,
+        disable: false
     });
 </script>
 </body>
